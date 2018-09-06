@@ -1,0 +1,1220 @@
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en"><!-- Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved. --><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script language="JavaScript">
+var  totalTimeoutMilliseconds = 1200000; 
+var  warningTimeoutMilliseconds = 1080000; 
+var timeOutURL = 'https://cms.nust.edu.pk/psp/ps/EMPLOYEE/HRMS/?cmd=expire';
+var timeoutWarningPageURL = 'https://cms.nust.edu.pk/psc/ps/EMPLOYEE/HRMS/s/WEBLIB_TIMEOUT.PT_TIMEOUTWARNING.FieldFormula.IScript_TIMEOUTWARNING';
+</script> 
+
+<link id="PSSTYLEREQ_4_css" rel="stylesheet" type="text/css" href="/cs/ps/cache/PSSTYLEREQ_4.css" />
+<link id="SSS_STYLESHEET_5_css" rel="stylesheet" type="text/css" href="/cs/ps/cache/SSS_STYLESHEET_5.css" />
+<title id="PSPAGETITLE">Student view of Grade Book</title>
+<script language="JavaScript">
+var winParent = null;
+var modalID = null;
+var modalZoomName = null;
+var baseKey_win0 = "\x1b";
+var altKey_win0 = "05678\xbc\xbe\xbf\xde";
+var ctrlKey_win0 = "JK";
+var saveWarningKeys_win0 = "";
+var bAccessibility_win0 =false;
+var bDoModal_win0 = false;
+var bPromptPage_win0 = false;
+var bTabOverTB_win0 = false;
+var bTabOverPg_win0 = false;
+var bTabOverNonPS_win0 = false;
+var PIA_KEYSTRUCT={CLASS_NBR:"1999",EMPLID:"00000189473",STRM:"0224"};
+var strCurrUrl='https://cms.nust.edu.pk/psp/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.LAM_STDNT_GRADES.GBL?CLASS_NBR=1999&amp;EMPLID=00000189473&amp;STRM=0224&amp;PAGE=LAM_STDNT_GRADES';
+var bIncInNavigation='F';
+var szCrefID='HC_LAM_STDNT_GRADES_GBL1';
+var szCrefReged='T';
+var szCrefVisible='F';
+var szCrefLabel='View My Assignments';
+var szCalendarType = 'G';
+var bMenuSrchPage = false;
+var bWSRP=0;var szMenuSrchText = "-999999-";
+var modalCloseUrl = '/cs/ps/cache/PT_PORTAL_IC_CLOSE_2.gif';
+var modalCloseAlt = 'Close';
+var modalResizeUrl= '/cs/ps/cache/PT_RESIZE_IMG_2.gif';
+var modalResizeAlt = 'Drag to resize';
+var modalMoveAlt = 'Drag to move';
+</script>
+<script language="JavaScript">
+ var gridRowSelRgbColor_win0 ="rgb(212,219,217)";
+</script>
+<script language="JavaScript">
+var PFieldList_win0 = [['CATEGORY',13],
+['DESCR',3],
+['LAM_CLS_GRD_SCL_CRSE_GRADE_INPUT',1],
+['ACTIVITY1',13]];
+</script>
+<script language="JavaScript">
+var EFieldList_win0 = [];
+</script>
+<script language="JavaScript">
+try {
+document.domain = "nust.edu.pk";
+}
+catch(err) {;}
+</script>
+<script language="JavaScript" type="text/javascript" src="/cs/ps/cache/PT_COMMON_MIN_7.js">
+</script>
+<script language="JavaScript" type="text/javascript" src="/cs/ps/cache/PT_AJAX_NET_MIN_7.js">
+</script>
+<script language="JavaScript" type="text/javascript" src="/cs/ps/cache/PT_SAVEWARNINGSCRIPT_MIN_4.js">
+</script>
+<script language="JavaScript" type="text/javascript" src="/cs/ps/cache/PT_PAGESCRIPT_win0_MIN_7.js">
+</script>
+<script language="JavaScript" type="text/javascript" src="/cs/ps/cache/PT_EDITSCRIPT_win0_MIN_4.js">
+</script>
+<script language="JavaScript" type="text/javascript" src="/cs/ps/cache/PT_POPUPSCRIPT_win0_MIN_7.js">
+</script>
+<script language="JavaScript" type="text/javascript" src="/cs/ps/cache/PT_GRIDSCRIPT_win0_MIN_7.js">
+</script>
+<script language="JavaScript" type="text/javascript" src="/cs/ps/cache/PT_TYPEAHEAD_win0_MIN_7.js">
+</script>
+<script language="JavaScript">
+var nResubmit=0;
+var nLastAction=0;
+var loader=null;
+if (typeof(bCleanHtml) == 'undefined')
+	var bCleanHtml = false;
+setupTimeout2();
+var postUrl_win0='https://cms.nust.edu.pk/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.LAM_STDNT_GRADES.GBL';
+function aAction_win0(form, name, params, bAjax, bPrompt)
+{
+setupTimeout2();
+if ((name != '#ICSave'))
+processing_win0(1,3000);
+aAction0_win0(form, name, params, bAjax, bPrompt);
+}
+function submitAction_win0(form, name)
+{
+setupTimeout2();
+if (!ptCommonObj2.isICQryDownload(form, name))
+ { processing_win0(1,3000); }
+preSubmitProcess_win0(form, name);
+var spellcheckpos = name.indexOf('$spellcheck');
+if ((spellcheckpos != -1) &amp;&amp; (name.indexOf('#KEYA5') != -1))
+	form.ICAction.value = name.substring(0,spellcheckpos);
+else 
+	form.ICAction.value=name;
+var actionName = form.ICAction.value;
+form.ICXPos.value=ptCommonObj2.getScrollX();
+form.ICYPos.value=ptCommonObj2.getScrollY();
+if (!ptCommonObj2.isAJAXReq(form, name) &amp;&amp; !ptCommonObj2.isPromptReq(name)){
+if (nLastAction == 1 &amp;&amp; nResubmit &gt; 0) return;
+form.ICResubmit.value=nResubmit;
+form.submit();
+if (!ptCommonObj2.isICQryDownload(form, name))
+	nResubmit++;
+}
+else if (ptCommonObj2.isPromptReq(name))
+	pAction_win0(form, name, arguments[2]);
+else
+	aAction_win0(form, actionName);}
+</script>
+<script language="javascript">
+var pt_calHeadstyle=" class='PTCALHEAD' "
+var pt_calWeekHeadstyle=" class='PTCALWEEKHEAD' "
+function dateitemrefs()
+{
+this.pt_dateheader = "/cs/ps/cache/PT_PORTAL_IC_CLOSE_2.gif";
+this.pt_datering = "/cs/ps/cache/PT_CURRENT_DATE_2.gif";
+this.pt_datesel = "/cs/ps/cache/PT_SELECTED_DATE_2.gif";
+this.pt_nextmonth = "/cs/ps/cache/PT_RIGHT_SCROLL_2.gif";
+this.pt_prevmonth= "/cs/ps/cache/PT_LEFT_SCROLL_2.gif";
+this.pt_daystitle_hijri = "/cs/ps/cache/PT_DATE_TITLE_S6_2.GIF";
+this.pt_daystitle_thai = "/cs/ps/cache/PT_DATE_TITLE_S0_2.GIF";
+this.pt_daystitle_s0 = "/cs/ps/cache/PT_DATE_TITLE_S0_2.GIF";
+this.pt_daystitle_m1 = "/cs/ps/cache/PT_DATE_TITLE_M1_2.GIF";
+this.pt_daystitle_t2 = "/cs/ps/cache/PT_DATE_TITLE_T2_2.GIF";
+this.pt_daystitle_w3 = "/cs/ps/cache/PT_DATE_TITLE_W3_2.GIF";
+this.pt_daystitle_t4 = "/cs/ps/cache/PT_DATE_TITLE_T4_2.GIF";
+this.pt_daystitle_f5 = "/cs/ps/cache/PT_DATE_TITLE_F5_2.gif";
+this.pt_daystitle_s6 = "/cs/ps/cache/PT_DATE_TITLE_S6_2.GIF";
+}
+ 
+function LoadCalendar()
+{
+var dateitems = new dateitemrefs();
+loadImages(dateitems);
+}
+function DatePrompt_win0(dtfield,promptfield,yrfmt,bsubmit)
+{
+setupTimeout2();
+openDate_win0(dtfield, promptfield, "DMY/"+yrfmt,bsubmit,"G",0);
+}
+</script>
+<script language="JavaScript" ptdefer="defer">
+if (typeof ptStyleSheet == "undefined") {
+ptStyleSheet = 'SSS_STYLESHEET';
+}
+function onLoadExt_win0() {
+modalZoomName = null;
+var oWin=window;
+var oDoc=document;
+ptTAObj_win0.init(oWin,oDoc,oDoc.win0,'/cs/ps/cache/PT_SRT2UP_SEL_2.gif','/cs/ps/cache/PT_SRT2DN_SEL_2.gif','/cs/ps/cache/PT_PORTAL_IC_CLOSE_2.gif',500);
+var pt_pageinfo = document.getElementById('pt_pageinfo_win0');
+if (pt_pageinfo) {
+pt_pageinfo.setAttribute('Page', 'LAM_STDNT_GRADES');
+pt_pageinfo.setAttribute('Component', 'LAM_STDNT_GRADES');
+pt_pageinfo.setAttribute('Menu', 'SA_LEARNER_SERVICES');
+}
+
+ g_bAccessibilityMode=false; 
+UpdateBreadCrumbs();
+runOnloadScript_win0(false,false,false,false,false,false,false,false,true,false,false,false,false,true,false,7,'ICFocus',false,false);
+if (typeof(HelppopupObj_win0) != 'undefined' &amp;&amp; HelppopupObj_win0 != null)
+ HelppopupObj_win0.StopPopup();
+
+doModalOnLoad_win0(false, false);
+ResetGlyph_win0();
+self.scroll(0,0);
+objToBeFocus = null;
+if (typeof oWin == 'undefined') setEventHandlers_win0('ICFirstAnchor_win0', 'ICLastAnchor_win0', false);
+ else
+ oWin.setEventHandlers_win0('ICFirstAnchor_win0', 'ICLastAnchor_win0', false);
+setFocus_win0('DERIVED_CS_SRVC_IND_NEG',-1);
+processing_win0(0,3000);
+ptConsole2.enable();
+
+GenerateABN();
+GenerateFakeBC();
+bcUpdateForPTF();if (typeof(myAppsWindowOpenJS) != 'undefined' &amp;&amp; myAppsWindowOpenJS != null &amp;&amp; myAppsWindowOpenJS != '')
+ {
+try {eval(myAppsWindowOpenJS);} catch(e) {}
+  myAppsWindowOpenJS=null;
+}
+ResetGlyph_win0();setPageletInfoInCtxmenu_win0('false');}
+try{ptEvent.load(onLoadExt_win0);}catch(e){}
+</script></head>
+<body tabindex="-1" class="PSPAGE">
+<div id="pt_pageinfo_win0" page="LAM_STDNT_GRADES" component="LAM_STDNT_GRADES" menu="SA_LEARNER_SERVICES"></div>
+<div id="pt_modalMaskCover"> </div><div id="pt_modalMask"> </div><div id="pt_console"><input type="button" id="COPYCONSOLE" value="Copy" onclick="ptConsole2.copy();" alt="copy to clipboard" title="copy to clipboard" /><input type="button" id="CLEARCONSOLE" onclick="ptConsole2.clear();" value="Clear" alt="clear console" title="clear console" /><input type="button" id="HIDECONSOLE" onclick="ptConsole2.hide();" value="Hide" alt="hide console" title="hide console" /><input type="button" id="CLOSECONSOLE" onclick="ptConsole2.deactive();" value="Close" alt="close console" title="close console" /></div><div id="pt_typeahead0" style="display: none;"><span id="pt_typeahead" class="spanTextDropdown"> </span></div><div id="WAIT_win0" style="display: none; position: absolute; right: 0px; visibility: hidden;"><img id="processing" align="left" src="/cs/ps/cache/PT_PROCESSING_2.gif" alt="Processing... please wait" title="Processing... please wait" /></div>
+ <div id="SAVED_win0" style="display: none; position: absolute; right: 0px; visibility: hidden;"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img src="/cs/ps/cache/PTPORTAL_POPBOX_LEFT_2.gif" width="7" height="39" border="0" alt="" /></td><td id="saveWait_win0" width="35" align="center" valign="middle" background="/cs/ps/cache/PTPORTAL_POPBOX_CENTER_2.gif"><img src="/cs/ps/cache/PT_LOADER_2.gif" width="24" height="24" alt="" /></td><td nowrap="nowrap" background="/cs/ps/cache/PTPORTAL_POPBOX_CENTER_2.gif"><span id="ptStatusText_win0" dir="ltr" class="PSPROCESSING"> </span></td><td><img src="/cs/ps/cache/PTPORTAL_POPBOX_RIGHT_2.gif" width="6" height="39" alt="" /></td><td> </td></tr></tbody></table></div><a name="ICFirstAnchor_win0"></a>
+<form name="win0" method="post" action="https://cms.nust.edu.pk/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.LAM_STDNT_GRADES.GBL" autocomplete="off" class="PSForm">
+<div id="win0divPSHIDDENFIELDS" style="display:none"><input type="hidden" name="ICType" id="ICType" value="Panel" />
+<input type="hidden" name="ICElementNum" id="ICElementNum" value="0" />
+<input type="hidden" name="ICStateNum" id="ICStateNum" value="7" />
+<input type="hidden" name="ICAction" id="ICAction" value="None" />
+<input type="hidden" name="ICXPos" id="ICXPos" value="0" />
+<input type="hidden" name="ICYPos" id="ICYPos" value="0" />
+<input type="hidden" name="ResponsetoDiffFrame" id="ResponsetoDiffFrame" value="-1" />
+<input type="hidden" name="TargetFrameName" id="TargetFrameName" value="None" />
+<input type="hidden" name="FacetPath" id="FacetPath" value="None" />
+<input type="hidden" name="ICFocus" id="ICFocus" value="" />
+<input type="hidden" name="ICSaveWarningFilter" id="ICSaveWarningFilter" value="0" />
+<input type="hidden" name="ICChanged" id="ICChanged" value="-1" />
+<input type="hidden" name="ICResubmit" id="ICResubmit" value="0" />
+<input type="hidden" name="ICSID" id="ICSID" value="fmU1NFV5lSu9WPWj1EStzwlU4wgM5xnDmYh6EXuUAPg=" />
+<input type="hidden" name="ICActionPrompt" id="ICActionPrompt" value="false" />
+<input type="hidden" name="ICTypeAheadID" id="ICTypeAheadID" value="" />
+<input type="hidden" name="ICFind" id="ICFind" value="" />
+<input type="hidden" name="ICAddCount" id="ICAddCount" value="" />
+<input type="hidden" name="ICAPPCLSDATA" id="ICAPPCLSDATA" value="" />
+</div><div id="win0divPAGEBAR"></div><div id="win0divPSPANELTABS"></div><div id="win0divPAGECONTAINER"><table class="PSPAGECONTAINER"><tbody><tr><td>
+<div id="win0divPSPAGECONTAINER"><table border="0" id="ACE_width" cellpadding="0" cellspacing="0" class="PSPAGECONTAINER" cols="9" width="743">
+<tbody><tr>
+<td width="0" height="3"></td>
+<td width="4"></td>
+<td width="12"></td>
+<td width="28"></td>
+<td width="562"></td>
+<td width="30"></td>
+<td width="20"></td>
+<td width="68"></td>
+<td width="19"></td>
+</tr>
+<tr>
+<td height="129"></td>
+<td colspan="5" valign="top" align="left">
+<div id="win0divDERIVED_REGFRM1_GROUP_BOX"><table cellpadding="2" cellspacing="0" cols="1" class="PABACKGROUNDINVISIBLEWBO" width="635">
+<tbody><tr><td width="633">
+<table border="0" id="ACE_DERIVED_REGFRM1_GROUP_BOX" cellpadding="0" cellspacing="0" cols="5" width="633" class="PABACKGROUNDINVISIBLE" style="border-style:none">
+<tbody><tr>
+<td width="3" height="0"></td>
+<td width="9"></td>
+<td width="1"></td>
+<td width="610"></td>
+<td width="10"></td>
+</tr>
+<tr>
+<td height="93"></td>
+<td colspan="3" valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_GROUP_BOX"><table cellpadding="2" cellspacing="0" cols="1" class="PABACKGROUNDINVISIBLEWBO" width="619">
+<tbody><tr><td width="617">
+<table border="0" id="ACE_DERIVED_SSTSNAV_GROUP_BOX" cellpadding="0" cellspacing="0" cols="7" width="617" class="PABACKGROUNDINVISIBLE" style="border-style:none">
+<tbody><tr>
+<td width="7" height="0"></td>
+<td width="1"></td>
+<td width="1"></td>
+<td width="422"></td>
+<td width="180"></td>
+<td width="1"></td>
+<td width="5"></td>
+</tr>
+<tr>
+<td height="3" colspan="4"></td>
+<td rowspan="2" valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_SSTS_MAIN_GOTO"><table cellpadding="2" cellspacing="0" cols="1" class="PABACKGROUNDINVISIBLEWBO" width="179">
+<tbody><tr><td width="177">
+<table border="0" id="ACE_DERIVED_SSTSNAV_SSTS_MAIN_GOTO" cellpadding="0" cellspacing="0" cols="3" width="177" class="PABACKGROUNDINVISIBLE" style="border-style:none">
+<tbody><tr>
+<td width="7" height="0"></td>
+<td width="148"></td>
+<td width="22"></td>
+</tr>
+<tr>
+<td height="1" colspan="2"></td>
+<td rowspan="2" nowrap="nowrap" valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_GO"><a name="DERIVED_SSTSNAV_GO" id="DERIVED_SSTSNAV_GO" tabindex="23" href="javascript:submitAction_win0(document.win0,'DERIVED_SSTSNAV_GO');"><img src="/cs/ps/cache/PT_NAV_GO_2.gif" name="DERIVED_SSTSNAV_GO$IMG" alt="GO!" title="GO!" border="0" /></a>
+</div></td>
+</tr>
+<tr>
+<td height="22"></td>
+<td valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_SSTS_MAIN_GOTO$7$"><select name="DERIVED_SSTSNAV_SSTS_MAIN_GOTO$7$" id="DERIVED_SSTSNAV_SSTS_MAIN_GOTO$7$" tabindex="22" size="1" class="PSDROPDOWNLIST" style="width:148px; " onchange="addchg_win0(this);return doEdits_win0(this,'','N','N','N','N','Y','Y',0);" psnchg="0">
+<option value="0300">Account Inquiry</option>
+<option value="0200">My Academics</option>
+<option value="0400">Personal Data Summary</option>
+<option value="0100">Student Center</option>
+<option value="0500">User Preferences</option>
+<option value="9999" selected="selected">go to ...</option>
+</select>
+</div></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="25" colspan="3"></td>
+<td rowspan="2" valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_PERSON_NAME"><span class="PALEVEL0PRIMARY" id="DERIVED_SSTSNAV_PERSON_NAME">HAMZA KHURSHID</span>
+</div></td>
+</tr>
+<tr>
+<td height="5" colspan="3"></td>
+</tr>
+<tr>
+<td height="28"></td>
+<td valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_SSTS_NAV_TABS_DIS"><div style="width:1px; ">
+<!-- Begin HTML Area Name Undisclosed -->
+
+<!-- End HTML Area -->
+</div>
+</div></td>
+<td colspan="4" valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_SSTS_NAV_TABS"><div style="width:604px; ">
+<!-- Begin HTML Area Name Undisclosed -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_TOP_IMG_1.gif" width="8" height="6" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_CENTERTOP_IMG_1.gif" height="6" class="ssstabwidth" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_TOP_IMG_1.gif" width="8" height="6" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_TOP_IMG_1.gif" width="8" height="6" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_CENTERTOP_IMG_1.gif" height="6" class="ssstabwidth" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_TOP_IMG_1.gif" width="8" height="6" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_A_LEFT_TOP_IMG_1.gif" width="8" height="6" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_A_CENTERTOP_IMG_1.gif" height="6" class="ssstabwidth" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_A_RIGHT_TOP_IMG_1.gif" width="8" height="6" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_TOP_IMG_1.gif" width="8" height="6" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_CENTERTOP_IMG_1.gif" height="6" class="ssstabwidth" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_TOP_IMG_1.gif" width="8" height="6" /></td></tr><tr><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="15" /></td>
+<td class="ssstabinactive" width="25%"><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?Page=SSR_CLSRCH_ENTRY&amp;Action=U" class="ssstabmaintext">Search</a></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="15" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="15" /></td>
+<td class="ssstabinactive" width="25%"><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSS_MY_PLANNER.GBL?Page=SSS_MY_PLANNER&amp;Action=A" class="ssstabmaintext">Plan</a></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="15" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_A_LEFT_CENTER_IMG_1.gif" width="8" height="15" /></td>
+<td class="ssstabactive" width="25%"><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SSENRL_CART.GBL?Page=SSR_SSENRL_CART&amp;Action=A" class="ssstabmaintext">Enroll</a></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_A_RIGHT_CENTER_IMG_1.gif" width="8" height="15" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="15" /></td>
+<td class="ssstabinactive" width="25%"><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSS_MY_ACAD.GBL?Page=SSS_MY_ACAD&amp;Action=U" class="ssstabmaintext">My Academics</a></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="15" /></td></tr><tr><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_BOTTOM_IMG_1.gif" width="8" height="2" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_CENTERBOTTOM_IMG_1.gif" height="2" class="ssstabwidth" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_BOTTOM_IMG_1.gif" width="8" height="2" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_BOTTOM_IMG_1.gif" width="8" height="2" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_CENTERBOTTOM_IMG_1.gif" height="2" class="ssstabwidth" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_BOTTOM_IMG_1.gif" width="8" height="2" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_A_LEFT_BOTTOM_IMG_1.gif" width="8" height="2" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_A_CENTERBOTTOM_IMG_1.gif" height="2" class="ssstabwidth" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_A_RIGHT_BOTTOM_IMG_1.gif" width="8" height="2" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_BOTTOM_IMG_1.gif" width="8" height="2" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_CENTERBOTTOM_IMG_1.gif" height="2" class="ssstabwidth" /></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_BOTTOM_IMG_1.gif" width="8" height="2" /></td></tr></tbody></table>
+<!-- End HTML Area -->
+</div>
+</div></td>
+</tr>
+<tr>
+<td height="23"></td>
+<td valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_SSTS_NAV_STABS_DIS"><div style="width:1px; ">
+<!-- Begin HTML Area Name Undisclosed -->
+
+<!-- End HTML Area -->
+</div>
+</div></td>
+<td colspan="4" valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_SSTS_NAV_SUBTABS"><div style="width:604px; ">
+<!-- Begin HTML Area Name Undisclosed -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="2" /></td>
+<td class="ssstabinactive" height="2"> </td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="2" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="2" /></td>
+<td class="ssstabinactive" height="2"> </td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="2" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="2" /></td>
+<td class="ssstabinactive" height="2"> </td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="2" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="2" /></td>
+<td class="ssstabinactive" height="2"> </td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="2" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="2" /></td>
+<td class="ssstabinactive" height="2"> </td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="2" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_A_LEFT_CENTER_IMG_1.gif" width="8" height="2" /></td>
+<td class="ssstabactive" height="2"> </td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_A_RIGHT_CENTER_IMG_1.gif" width="8" height="2" /></td></tr><tr><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="15" /></td>
+<td class="ssstabinactive" width="16%"><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SSENRL_LIST.GBL?Page=SSR_SSENRL_LIST&amp;Action=A" class="ssstabmaintext">my class schedule</a></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="15" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="15" /></td>
+<td class="ssstabinactive" width="16%"><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SSENRL_CART.GBL?Page=SSR_SSENRL_CART&amp;Action=A" class="ssstabmaintext">add</a></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="15" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="15" /></td>
+<td class="ssstabinactive" width="16%"><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SSENRL_DROP.GBL?Page=SSR_SSENRL_DROP&amp;Action=A" class="ssstabmaintext">drop</a></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="15" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="15" /></td>
+<td class="ssstabinactive" width="16%"><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SSENRL_SWAP.GBL?Page=SSR_SSENRL_SWAP&amp;Action=A" class="ssstabmaintext">swap</a></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="15" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="15" /></td>
+<td class="ssstabinactive" width="16%"><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SSENRL_EDIT.GBL?Page=SSR_SSENRL_EDIT&amp;Action=A" class="ssstabmaintext">edit</a></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="15" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_A_LEFT_CENTER_IMG_1.gif" width="8" height="15" /></td>
+<td class="ssstabactive" width="16%"><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SS_TERM_LINKS.GBL?Page=SSR_SS_TERM_LINKS&amp;Action=A" class="ssstabmaintext">term information</a></td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_A_RIGHT_CENTER_IMG_1.gif" width="8" height="15" /></td></tr><tr><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="1" /></td>
+<td class="ssstabinactive" height="1"> </td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="1" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="1" /></td>
+<td class="ssstabinactive" height="1"> </td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="1" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="1" /></td>
+<td class="ssstabinactive" height="1"> </td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="1" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="1" /></td>
+<td class="ssstabinactive" height="1"> </td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="1" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_IA_LEFT_CENTER_IMG_1.gif" width="8" height="1" /></td>
+<td class="ssstabinactive" height="1"> </td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_IA_RIGHT_CENTER_IMG_1.gif" width="8" height="1" /></td><td><img src="/cs/ps/cache/PS_CS_TAB_A_LEFT_CENTER_IMG_1.gif" width="8" height="1" /></td>
+<td class="ssstabactive" height="1"> </td>
+<td><img src="/cs/ps/cache/PS_CS_TAB_A_RIGHT_CENTER_IMG_1.gif" width="8" height="1" /></td></tr></tbody></table>
+<!-- End HTML Area -->
+</div>
+</div></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="1" colspan="5"></td>
+</tr>
+<tr>
+<td height="14" colspan="3"></td>
+<td colspan="2" valign="top" align="left">
+<div id="win0divDERIVED_REGFRM1_SS_TRANSACT_TITLE"><span class="PATRANSACTIONTITLE" id="DERIVED_REGFRM1_SS_TRANSACT_TITLE">View Assignments and Grades</span>
+</div></td>
+</tr>
+<tr>
+<td height="20" colspan="2"></td>
+<td colspan="3" valign="top" align="left">
+<div id="win0divDERIVED_REGFRM1_TITLE1"><span class="PAPAGETITLE" id="DERIVED_REGFRM1_TITLE1">Class Grades</span>
+</div></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="10" colspan="9"></td>
+</tr>
+<tr>
+<td height="152" colspan="2"></td>
+<td colspan="3" valign="top" align="left">
+<div id="win0divDERIVED_SSR_FC_GROUPBOX"><table cellpadding="2" cellspacing="0" cols="1" class="PABACKGROUNDINVISIBLEWBO" width="601">
+<tbody><tr><td width="599">
+<table border="0" id="ACE_DERIVED_SSR_FC_GROUPBOX" cellpadding="0" cellspacing="0" cols="5" width="599" class="PABACKGROUNDINVISIBLE" style="border-style:none">
+<tbody><tr>
+<td width="7" height="0"></td>
+<td width="1"></td>
+<td width="43"></td>
+<td width="544"></td>
+<td width="4"></td>
+</tr>
+<tr>
+<td height="10" colspan="2"></td>
+<td colspan="3" valign="top" align="left">
+<div id="win0divDERIVED_SSR_FC_SSS_PAGE_KEYDESCR2"><span class="SSSKEYTEXT" id="DERIVED_SSR_FC_SSS_PAGE_KEYDESCR2">Spring Semester 2018 [Reg] | Bachelors | NUST</span>
+</div></td>
+</tr>
+<tr>
+<td height="8"></td>
+<td colspan="2" valign="top" align="left">
+<div id="win0div$ICField$281$"><table cellpadding="2" cellspacing="0" cols="1" class="PABACKGROUNDINVISIBLEWBO" width="44">
+<tbody><tr><td width="42" height="6">
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="117"></td>
+<td colspan="3" valign="top" align="left">
+<div id="win0divDERIVED_SSR_FC_"><table cellpadding="2" cellspacing="0" cols="1" class="SSSGROUPBOXLEFTWBO" width="587">
+<tbody><tr><td width="585">
+<table border="0" id="ACE_DERIVED_SSR_FC_" cellpadding="0" cellspacing="0" cols="7" width="585" class="SSSGROUPBOXLEFT" style="border-style:none">
+<tbody><tr>
+<td width="7" height="6"></td>
+<td width="16"></td>
+<td width="8"></td>
+<td width="124"></td>
+<td width="120"></td>
+<td width="304"></td>
+<td width="6"></td>
+</tr>
+<tr>
+<td height="1"></td>
+<td colspan="2" rowspan="3" nowrap="nowrap" valign="top" align="left">
+<div id="win0divDERIVED_SSR_FC_SSR_EXPAND_COLLAPS"><a name="DERIVED_SSR_FC_SSR_EXPAND_COLLAPS" id="DERIVED_SSR_FC_SSR_EXPAND_COLLAPS" tabindex="33" href="javascript:submitAction_win0(document.win0,'DERIVED_SSR_FC_SSR_EXPAND_COLLAPS');"><img src="/cs/ps/cache/PS_COLLAPSE_ICN_1.gif" name="DERIVED_SSR_FC_SSR_EXPAND_COLLAPS$IMG" alt="Expand / Collapse" title="Expand / Collapse" border="0" /></a>
+</div></td>
+<td></td>
+<td rowspan="2" valign="top" align="left">
+<div id="win0divDERIVED_SSR_FC_$262$"><table cellpadding="2" cellspacing="0" cols="1" class="PABACKGROUNDINVISIBLEWBO" width="119">
+<tbody><tr><td width="117">
+<table border="0" id="ACE_DERIVED_SSR_FC_$262$" cellpadding="0" cellspacing="0" cols="2" width="117" class="PABACKGROUNDINVISIBLE" style="border-style:none">
+<tbody><tr>
+<td width="11" height="0"></td>
+<td width="106"></td>
+</tr>
+<tr>
+<td height="9"></td>
+<td nowrap="nowrap" valign="top" align="left">
+<div id="win0divDERIVED_SSR_FC_SSS_CHG_CLS_LINK"><span id="DERIVED_SSR_FC_SSS_CHG_CLS_LINK$span" class="SSSBUTTON_ACTIONLINK"><a name="DERIVED_SSR_FC_SSS_CHG_CLS_LINK" id="DERIVED_SSR_FC_SSS_CHG_CLS_LINK" ptlinktgt="pt_peoplecode" tabindex="35" href="javascript:submitAction_win0(document.win0,'DERIVED_SSR_FC_SSS_CHG_CLS_LINK');" class="SSSBUTTON_ACTIONLINK">Change Class</a></span>
+</div></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="17"></td>
+<td rowspan="2" nowrap="nowrap" valign="top" align="left">
+<div id="win0divDERIVED_SSR_FC_SSR_CLASSNAME_LONG"><span id="DERIVED_SSR_FC_SSR_CLASSNAME_LONG$span" class="PALEVEL0SECONDARY" style="color:dimgray;" title="View Details">EE 212 - A3B  (1999)</span>
+</div></td>
+</tr>
+<tr>
+<td height="4"></td>
+</tr>
+<tr>
+<td height="70" colspan="2"></td>
+<td colspan="4" valign="top" align="left">
+<div id="win0divDERIVED_SSR_FC_GROUPBOX1"><table cellpadding="2" cellspacing="0" cols="1" class="PABACKGROUNDINVISIBLEWBO" width="555">
+<tbody><tr><td width="553">
+<table border="0" id="ACE_DERIVED_SSR_FC_GROUPBOX1" cellpadding="0" cellspacing="0" cols="5" width="553" class="PABACKGROUNDINVISIBLE" style="border-style:none">
+<tbody><tr>
+<td width="7" height="0"></td>
+<td width="1"></td>
+<td width="43"></td>
+<td width="500"></td>
+<td width="2"></td>
+</tr>
+<tr>
+<td height="10" colspan="2"></td>
+<td colspan="3" valign="top" align="left">
+<div id="win0divDERIVED_SSR_FC_DESCR254"><span class="PSEDITBOX_DISPONLY" id="DERIVED_SSR_FC_DESCR254">Basic Electronics (Laboratory)</span>
+</div></td>
+</tr>
+<tr>
+<td height="8"></td>
+<td colspan="2" valign="top" align="left">
+<div id="win0div$ICField$277$"><table cellpadding="2" cellspacing="0" cols="1" class="PABACKGROUNDINVISIBLEWBO" width="44">
+<tbody><tr><td width="42" height="6">
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="1" colspan="5"></td>
+</tr>
+<tr>
+<td height="34"></td>
+<td colspan="3" valign="top" align="left">
+<div id="win0divCLASS_MTG_NBR$0"><table cellspacing="0" class="PSLEVEL3GRIDNBO" id="CLASS_MTG_NBR$scroll$0" dir="ltr" cols="4" width="544" cellpadding="2">
+<tbody><tr>
+<th scope="col" abbr="Days and Times" width="106" align="left" class="SSSGRIDCOLUMNHDRTXTWBO">Days and Times</th>
+<th scope="col" abbr="Room" width="98" align="left" class="SSSGRIDCOLUMNHDRTXTWBO">Room</th>
+<th scope="col" abbr="Instructor" width="98" align="left" class="SSSGRIDCOLUMNHDRTXTWBO">Instructor</th>
+<th scope="col" abbr="Dates" width="72" align="left" class="SSSGRIDCOLUMNHDRTXTWBO">Dates</th>
+</tr>
+<tr id="trCLASS_MTG_NBR$0_row1" valign="center">
+<td align="left" height="15" class="PSLEVEL3GRIDROW">
+<div id="win0divMTG_SCHED$0"><span class="PSLONGEDITBOX" id="MTG_SCHED$0">Tu 14:00-17:00</span>
+</div></td>
+<td align="left" class="PSLEVEL3GRIDROW">
+<div id="win0divMTG_LOC$0"><span class="PSLONGEDITBOX" id="MTG_LOC$0">Basic Electronic Lab</span>
+</div></td>
+<td align="left" class="PSLEVEL3GRIDROW">
+<div id="win0divMTG_INSTR$0"><span class="PSLONGEDITBOX" id="MTG_INSTR$0">Staff</span>
+</div></td>
+<td align="left" class="PSLEVEL3GRIDROW">
+<div id="win0divMTG_DATE$0"><span class="PSLONGEDITBOX" id="MTG_DATE$0">05/02/2018 - 08/06/2018</span>
+</div></td>
+</tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="4" colspan="5"></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="1" colspan="7"></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="2" colspan="5"></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="10" colspan="9"></td>
+</tr>
+<tr>
+<td height="30" colspan="3"></td>
+<td colspan="3" valign="top" align="left">
+<div id="win0divDERIVED_LAM_CATEGORY_WEIGHT"><table cellpadding="2" cellspacing="0" cols="1" class="SSSGROUPBOXDKBLUEWBO" width="619">
+<tbody><tr><td class="PAGROUPBOXLABELINVISIBLE" align="left">Expand section</td></tr>
+<tr><td width="617">
+<table border="0" id="ACE_DERIVED_LAM_CATEGORY_WEIGHT" cellpadding="0" cellspacing="0" cols="3" width="617" class="SSSGROUPBOXDKBLUE" style="border-style:none">
+<tbody><tr>
+<td width="3" height="0"></td>
+<td width="28"></td>
+<td width="586"></td>
+</tr>
+<tr>
+<td height="1"></td>
+<td rowspan="2" nowrap="nowrap" valign="top" align="left">
+<div id="win0divDERIVED_LAM_DERIVED_LINK"><a name="DERIVED_LAM_DERIVED_LINK" id="DERIVED_LAM_DERIVED_LINK" tabindex="68" href="javascript:submitAction_win0(document.win0,'DERIVED_LAM_DERIVED_LINK');"><img src="/cs/ps/cache/PS_COLLAPSE_ICN_1.gif" name="DERIVED_LAM_DERIVED_LINK$IMG" alt="Collapse section" title="Collapse section" border="0" /></a>
+</div></td>
+</tr>
+<tr>
+<td height="15"></td>
+<td valign="top" align="left">
+<div id="win0div$ICField$127$"><span class="PALEVEL0SECONDARY">Class Assignments</span>
+</div></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="8" colspan="9"></td>
+</tr>
+<tr>
+<td height="253" colspan="4"></td>
+<td colspan="4" valign="top" align="left">
+<div id="win0divDERIVED_LAM_GROUPBOX"><table cellpadding="2" cellspacing="0" cols="1" class="PABACKGROUNDINVISIBLEWBO" width="679">
+<tbody><tr><td width="677">
+<table border="0" id="ACE_DERIVED_LAM_GROUPBOX" cellpadding="0" cellspacing="0" cols="3" width="677" class="PABACKGROUNDINVISIBLE" style="border-style:none">
+<tbody><tr>
+<td width="3" height="0"></td>
+<td width="672"></td>
+<td width="2"></td>
+</tr>
+<tr>
+<td height="245"></td>
+<td valign="top" align="left">
+<div id="win0divSTDNT_GRADE_DTL$0"><table cellspacing="0" class="PSLEVEL1GRIDWBO" id="STDNT_GRADE_DTL$scrolli$0" dir="ltr" cols="1" width="672" cellpadding="0">
+<tbody><tr><td>
+<table dir="ltr" border="0" cellpadding="2" cellspacing="0" cols="7" width="100%" class="PSLEVEL1GRID" style="border-style:none">
+<tbody><tr>
+<th scope="col" abbr="Begin Date" width="75" align="CENTER" class="PSLEVEL1GRIDCOLUMNHDR"><a name="STDNT_GRADE_DTL$srt6$0" id="STDNT_GRADE_DTL$srt6$0" tabindex="88" class="PSLEVEL1GRIDCOLUMNHDR" href="javascript:submitAction_win0(document.win0,'STDNT_GRADE_DTL$srt6$0');" title="Click column heading to sort ascending">Begin Date</a></th>
+<th scope="col" abbr="Due Date" width="79" align="CENTER" class="PSLEVEL1GRIDCOLUMNHDR"><a name="STDNT_GRADE_DTL$srt7$0" id="STDNT_GRADE_DTL$srt7$0" tabindex="89" class="PSLEVEL1GRIDCOLUMNHDR" href="javascript:submitAction_win0(document.win0,'STDNT_GRADE_DTL$srt7$0');" title="Click column heading to sort ascending">Due Date</a></th>
+<th scope="col" abbr="Assignment" width="60" align="left" class="PSLEVEL1GRIDCOLUMNHDR"><a name="STDNT_GRADE_DTL$srt9$0" id="STDNT_GRADE_DTL$srt9$0" tabindex="91" class="PSLEVEL1GRIDCOLUMNHDR" href="javascript:submitAction_win0(document.win0,'STDNT_GRADE_DTL$srt9$0');" title="Click column heading to sort ascending">Assignment</a></th>
+<th scope="col" abbr="Category" width="57" align="left" class="PSLEVEL1GRIDCOLUMNHDR"><a name="STDNT_GRADE_DTL$srt13$0" id="STDNT_GRADE_DTL$srt13$0" tabindex="95" class="PSLEVEL1GRIDCOLUMNHDR" href="javascript:submitAction_win0(document.win0,'STDNT_GRADE_DTL$srt13$0');" title="Click column heading to sort ascending">Category</a></th>
+<th scope="col" abbr="Grade" width="39" align="CENTER" class="PSLEVEL1GRIDCOLUMNHDR"><a name="STDNT_GRADE_DTL$srt15$0" id="STDNT_GRADE_DTL$srt15$0" tabindex="97" class="PSLEVEL1GRIDCOLUMNHDR" href="javascript:submitAction_win0(document.win0,'STDNT_GRADE_DTL$srt15$0');" title="Click column heading to sort ascending">Grade</a></th>
+<th scope="col" abbr="Out of" width="40" align="CENTER" class="PSLEVEL1GRIDCOLUMNHDR"><a name="STDNT_GRADE_DTL$srt16$0" id="STDNT_GRADE_DTL$srt16$0" tabindex="98" class="PSLEVEL1GRIDCOLUMNHDR" href="javascript:submitAction_win0(document.win0,'STDNT_GRADE_DTL$srt16$0');" title="Click column heading to sort ascending">Out of</a></th>
+<th scope="col" abbr="Other Information" width="162" align="left" class="PSLEVEL1GRIDCOLUMNHDR"><a name="STDNT_GRADE_DTL$srt18$0" id="STDNT_GRADE_DTL$srt18$0" tabindex="100" class="PSLEVEL1GRIDCOLUMNHDR" href="javascript:submitAction_win0(document.win0,'STDNT_GRADE_DTL$srt18$0');" title="Click column heading to sort ascending">Other Information</a></th>
+</tr>
+<tr id="trSTDNT_GRADE_DTL$0_row1" valign="center" onclick="HighLightTR('rgb(212,219,217)','','trSTDNT_GRADE_DTL$0_row1');" onmouseover="hoverLightTR('rgb(249,254,203)','',0,'trSTDNT_GRADE_DTL$0_row1');" onmouseout="hoverLightTR('rgb(249,254,203)','',1,'trSTDNT_GRADE_DTL$0_row1');">
+<td align="left" height="13" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_BEGIN_DT$0"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_BEGIN_DT$0">05/02/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_DUE_DT$0"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_DUE_DT$0">20/02/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW" nowrap="nowrap">
+<div id="win0divACTIVITY$0"><span id="ACTIVITY$span$0" class="PSHYPERLINK" title="Student Activities"><a name="ACTIVITY$0" id="ACTIVITY$0" ptlinktgt="pt_replace" tabindex="108" href="javascript:submitAction_win0(document.win0,'ACTIVITY$0');" class="PSHYPERLINK">LABWORK-1</a></span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divCATEGORY$0"><span class="PSEDITBOX_DISPONLY" id="CATEGORY$0">LabWork</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_STUDENT_GRADE$0"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_STUDENT_GRADE$0">13.00</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divLAM_CLASS_ACTV_MARK_OUT_OF$0"><span class="PSEDITBOX_DISPONLY" id="LAM_CLASS_ACTV_MARK_OUT_OF$0">15</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_EXPLANATION$0"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_EXPLANATION$0"> </span>
+</div></td>
+</tr>
+<tr id="trSTDNT_GRADE_DTL$0_row2" valign="center" onclick="HighLightTR('rgb(212,219,217)','','trSTDNT_GRADE_DTL$0_row2');" onmouseover="hoverLightTR('rgb(249,254,203)','',0,'trSTDNT_GRADE_DTL$0_row2');" onmouseout="hoverLightTR('rgb(249,254,203)','',1,'trSTDNT_GRADE_DTL$0_row2');">
+<td align="left" height="13" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divDERIVED_LAM_BEGIN_DT$1"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_BEGIN_DT$1">05/02/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divSTDNT_GRADE_DTL_DUE_DT$1"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_DUE_DT$1">20/02/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW" nowrap="nowrap">
+<div id="win0divACTIVITY$1"><span id="ACTIVITY$span$1" class="PSHYPERLINK" title="Student Activities"><a name="ACTIVITY$1" id="ACTIVITY$1" ptlinktgt="pt_replace" tabindex="116" href="javascript:submitAction_win0(document.win0,'ACTIVITY$1');" class="PSHYPERLINK">LABWORK-2</a></span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divCATEGORY$1"><span class="PSEDITBOX_DISPONLY" id="CATEGORY$1">LabWork</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divSTDNT_GRADE_DTL_STUDENT_GRADE$1"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_STUDENT_GRADE$1">14.00</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divLAM_CLASS_ACTV_MARK_OUT_OF$1"><span class="PSEDITBOX_DISPONLY" id="LAM_CLASS_ACTV_MARK_OUT_OF$1">15</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divDERIVED_LAM_EXPLANATION$1"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_EXPLANATION$1"> </span>
+</div></td>
+</tr>
+<tr id="trSTDNT_GRADE_DTL$0_row3" valign="center" onclick="HighLightTR('rgb(212,219,217)','','trSTDNT_GRADE_DTL$0_row3');" onmouseover="hoverLightTR('rgb(249,254,203)','',0,'trSTDNT_GRADE_DTL$0_row3');" onmouseout="hoverLightTR('rgb(249,254,203)','',1,'trSTDNT_GRADE_DTL$0_row3');">
+<td align="left" height="13" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_BEGIN_DT$2"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_BEGIN_DT$2">05/02/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_DUE_DT$2"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_DUE_DT$2">20/02/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW" nowrap="nowrap">
+<div id="win0divACTIVITY$2"><span id="ACTIVITY$span$2" class="PSHYPERLINK" title="Student Activities"><a name="ACTIVITY$2" id="ACTIVITY$2" ptlinktgt="pt_replace" tabindex="124" href="javascript:submitAction_win0(document.win0,'ACTIVITY$2');" class="PSHYPERLINK">FINAL LAB</a></span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divCATEGORY$2"><span class="PSEDITBOX_DISPONLY" id="CATEGORY$2">F-LAB</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_STUDENT_GRADE$2"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_STUDENT_GRADE$2">15.00</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divLAM_CLASS_ACTV_MARK_OUT_OF$2"><span class="PSEDITBOX_DISPONLY" id="LAM_CLASS_ACTV_MARK_OUT_OF$2">20</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_EXPLANATION$2"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_EXPLANATION$2"> </span>
+</div></td>
+</tr>
+<tr id="trSTDNT_GRADE_DTL$0_row4" valign="center" onclick="HighLightTR('rgb(212,219,217)','','trSTDNT_GRADE_DTL$0_row4');" onmouseover="hoverLightTR('rgb(249,254,203)','',0,'trSTDNT_GRADE_DTL$0_row4');" onmouseout="hoverLightTR('rgb(249,254,203)','',1,'trSTDNT_GRADE_DTL$0_row4');">
+<td align="left" height="13" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divDERIVED_LAM_BEGIN_DT$3"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_BEGIN_DT$3">06/03/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divSTDNT_GRADE_DTL_DUE_DT$3"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_DUE_DT$3">03/04/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW" nowrap="nowrap">
+<div id="win0divACTIVITY$3"><span id="ACTIVITY$span$3" class="PSHYPERLINK" title="Student Activities"><a name="ACTIVITY$3" id="ACTIVITY$3" ptlinktgt="pt_replace" tabindex="132" href="javascript:submitAction_win0(document.win0,'ACTIVITY$3');" class="PSHYPERLINK">LABWORK-4</a></span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divCATEGORY$3"><span class="PSEDITBOX_DISPONLY" id="CATEGORY$3">LabWork</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divSTDNT_GRADE_DTL_STUDENT_GRADE$3"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_STUDENT_GRADE$3">14.00</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divLAM_CLASS_ACTV_MARK_OUT_OF$3"><span class="PSEDITBOX_DISPONLY" id="LAM_CLASS_ACTV_MARK_OUT_OF$3">15</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divDERIVED_LAM_EXPLANATION$3"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_EXPLANATION$3"> </span>
+</div></td>
+</tr>
+<tr id="trSTDNT_GRADE_DTL$0_row5" valign="center" onclick="HighLightTR('rgb(212,219,217)','','trSTDNT_GRADE_DTL$0_row5');" onmouseover="hoverLightTR('rgb(249,254,203)','',0,'trSTDNT_GRADE_DTL$0_row5');" onmouseout="hoverLightTR('rgb(249,254,203)','',1,'trSTDNT_GRADE_DTL$0_row5');">
+<td align="left" height="13" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_BEGIN_DT$4"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_BEGIN_DT$4">02/04/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_DUE_DT$4"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_DUE_DT$4">12/04/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW" nowrap="nowrap">
+<div id="win0divACTIVITY$4"><span id="ACTIVITY$span$4" class="PSHYPERLINK" title="Student Activities"><a name="ACTIVITY$4" id="ACTIVITY$4" ptlinktgt="pt_replace" tabindex="140" href="javascript:submitAction_win0(document.win0,'ACTIVITY$4');" class="PSHYPERLINK">LABWORK-3</a></span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divCATEGORY$4"><span class="PSEDITBOX_DISPONLY" id="CATEGORY$4">LabWork</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_STUDENT_GRADE$4"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_STUDENT_GRADE$4">14.00</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divLAM_CLASS_ACTV_MARK_OUT_OF$4"><span class="PSEDITBOX_DISPONLY" id="LAM_CLASS_ACTV_MARK_OUT_OF$4">15</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_EXPLANATION$4"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_EXPLANATION$4"> </span>
+</div></td>
+</tr>
+<tr id="trSTDNT_GRADE_DTL$0_row6" valign="center" onclick="HighLightTR('rgb(212,219,217)','','trSTDNT_GRADE_DTL$0_row6');" onmouseover="hoverLightTR('rgb(249,254,203)','',0,'trSTDNT_GRADE_DTL$0_row6');" onmouseout="hoverLightTR('rgb(249,254,203)','',1,'trSTDNT_GRADE_DTL$0_row6');">
+<td align="left" height="13" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divDERIVED_LAM_BEGIN_DT$5"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_BEGIN_DT$5">04/04/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divSTDNT_GRADE_DTL_DUE_DT$5"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_DUE_DT$5">13/04/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW" nowrap="nowrap">
+<div id="win0divACTIVITY$5"><span id="ACTIVITY$span$5" class="PSHYPERLINK" title="Student Activities"><a name="ACTIVITY$5" id="ACTIVITY$5" ptlinktgt="pt_replace" tabindex="148" href="javascript:submitAction_win0(document.win0,'ACTIVITY$5');" class="PSHYPERLINK">LABWORK-5</a></span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divCATEGORY$5"><span class="PSEDITBOX_DISPONLY" id="CATEGORY$5">LabWork</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divSTDNT_GRADE_DTL_STUDENT_GRADE$5"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_STUDENT_GRADE$5">14.00</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divLAM_CLASS_ACTV_MARK_OUT_OF$5"><span class="PSEDITBOX_DISPONLY" id="LAM_CLASS_ACTV_MARK_OUT_OF$5">15</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divDERIVED_LAM_EXPLANATION$5"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_EXPLANATION$5"> </span>
+</div></td>
+</tr>
+<tr id="trSTDNT_GRADE_DTL$0_row7" valign="center" onclick="HighLightTR('rgb(212,219,217)','','trSTDNT_GRADE_DTL$0_row7');" onmouseover="hoverLightTR('rgb(249,254,203)','',0,'trSTDNT_GRADE_DTL$0_row7');" onmouseout="hoverLightTR('rgb(249,254,203)','',1,'trSTDNT_GRADE_DTL$0_row7');">
+<td align="left" height="13" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_BEGIN_DT$6"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_BEGIN_DT$6">03/04/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_DUE_DT$6"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_DUE_DT$6">18/04/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW" nowrap="nowrap">
+<div id="win0divACTIVITY$6"><span id="ACTIVITY$span$6" class="PSHYPERLINK" title="Student Activities"><a name="ACTIVITY$6" id="ACTIVITY$6" ptlinktgt="pt_replace" tabindex="156" href="javascript:submitAction_win0(document.win0,'ACTIVITY$6');" class="PSHYPERLINK">LABWORK-6</a></span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divCATEGORY$6"><span class="PSEDITBOX_DISPONLY" id="CATEGORY$6">LabWork</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_STUDENT_GRADE$6"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_STUDENT_GRADE$6">14.00</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divLAM_CLASS_ACTV_MARK_OUT_OF$6"><span class="PSEDITBOX_DISPONLY" id="LAM_CLASS_ACTV_MARK_OUT_OF$6">15</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_EXPLANATION$6"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_EXPLANATION$6"> </span>
+</div></td>
+</tr>
+<tr id="trSTDNT_GRADE_DTL$0_row8" valign="center" onclick="HighLightTR('rgb(212,219,217)','','trSTDNT_GRADE_DTL$0_row8');" onmouseover="hoverLightTR('rgb(249,254,203)','',0,'trSTDNT_GRADE_DTL$0_row8');" onmouseout="hoverLightTR('rgb(249,254,203)','',1,'trSTDNT_GRADE_DTL$0_row8');">
+<td align="left" height="13" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divDERIVED_LAM_BEGIN_DT$7"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_BEGIN_DT$7">22/05/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divSTDNT_GRADE_DTL_DUE_DT$7"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_DUE_DT$7">23/05/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW" nowrap="nowrap">
+<div id="win0divACTIVITY$7"><span id="ACTIVITY$span$7" class="PSHYPERLINK" title="Student Activities"><a name="ACTIVITY$7" id="ACTIVITY$7" ptlinktgt="pt_replace" tabindex="164" href="javascript:submitAction_win0(document.win0,'ACTIVITY$7');" class="PSHYPERLINK">LABWORK-7</a></span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divCATEGORY$7"><span class="PSEDITBOX_DISPONLY" id="CATEGORY$7">LabWork</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divSTDNT_GRADE_DTL_STUDENT_GRADE$7"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_STUDENT_GRADE$7">13.00</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divLAM_CLASS_ACTV_MARK_OUT_OF$7"><span class="PSEDITBOX_DISPONLY" id="LAM_CLASS_ACTV_MARK_OUT_OF$7">15</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divDERIVED_LAM_EXPLANATION$7"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_EXPLANATION$7"> </span>
+</div></td>
+</tr>
+<tr id="trSTDNT_GRADE_DTL$0_row9" valign="center" onclick="HighLightTR('rgb(212,219,217)','','trSTDNT_GRADE_DTL$0_row9');" onmouseover="hoverLightTR('rgb(249,254,203)','',0,'trSTDNT_GRADE_DTL$0_row9');" onmouseout="hoverLightTR('rgb(249,254,203)','',1,'trSTDNT_GRADE_DTL$0_row9');">
+<td align="left" height="13" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_BEGIN_DT$8"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_BEGIN_DT$8">22/05/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_DUE_DT$8"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_DUE_DT$8">24/05/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW" nowrap="nowrap">
+<div id="win0divACTIVITY$8"><span id="ACTIVITY$span$8" class="PSHYPERLINK" title="Student Activities"><a name="ACTIVITY$8" id="ACTIVITY$8" ptlinktgt="pt_replace" tabindex="172" href="javascript:submitAction_win0(document.win0,'ACTIVITY$8');" class="PSHYPERLINK">LABWORK-8</a></span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divCATEGORY$8"><span class="PSEDITBOX_DISPONLY" id="CATEGORY$8">LabWork</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_STUDENT_GRADE$8"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_STUDENT_GRADE$8">13.00</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divLAM_CLASS_ACTV_MARK_OUT_OF$8"><span class="PSEDITBOX_DISPONLY" id="LAM_CLASS_ACTV_MARK_OUT_OF$8">15</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_EXPLANATION$8"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_EXPLANATION$8"> </span>
+</div></td>
+</tr>
+<tr id="trSTDNT_GRADE_DTL$0_row10" valign="center" onclick="HighLightTR('rgb(212,219,217)','','trSTDNT_GRADE_DTL$0_row10');" onmouseover="hoverLightTR('rgb(249,254,203)','',0,'trSTDNT_GRADE_DTL$0_row10');" onmouseout="hoverLightTR('rgb(249,254,203)','',1,'trSTDNT_GRADE_DTL$0_row10');">
+<td align="left" height="13" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divDERIVED_LAM_BEGIN_DT$9"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_BEGIN_DT$9">22/05/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divSTDNT_GRADE_DTL_DUE_DT$9"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_DUE_DT$9">26/05/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW" nowrap="nowrap">
+<div id="win0divACTIVITY$9"><span id="ACTIVITY$span$9" class="PSHYPERLINK" title="Student Activities"><a name="ACTIVITY$9" id="ACTIVITY$9" ptlinktgt="pt_replace" tabindex="180" href="javascript:submitAction_win0(document.win0,'ACTIVITY$9');" class="PSHYPERLINK">LABWORK-9</a></span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divCATEGORY$9"><span class="PSEDITBOX_DISPONLY" id="CATEGORY$9">LabWork</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divSTDNT_GRADE_DTL_STUDENT_GRADE$9"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_STUDENT_GRADE$9">13.00</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divLAM_CLASS_ACTV_MARK_OUT_OF$9"><span class="PSEDITBOX_DISPONLY" id="LAM_CLASS_ACTV_MARK_OUT_OF$9">15</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divDERIVED_LAM_EXPLANATION$9"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_EXPLANATION$9"> </span>
+</div></td>
+</tr>
+<tr id="trSTDNT_GRADE_DTL$0_row11" valign="center" onclick="HighLightTR('rgb(212,219,217)','','trSTDNT_GRADE_DTL$0_row11');" onmouseover="hoverLightTR('rgb(249,254,203)','',0,'trSTDNT_GRADE_DTL$0_row11');" onmouseout="hoverLightTR('rgb(249,254,203)','',1,'trSTDNT_GRADE_DTL$0_row11');">
+<td align="left" height="13" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_BEGIN_DT$10"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_BEGIN_DT$10">27/05/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_DUE_DT$10"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_DUE_DT$10">28/05/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW" nowrap="nowrap">
+<div id="win0divACTIVITY$10"><span id="ACTIVITY$span$10" class="PSHYPERLINK" title="Student Activities"><a name="ACTIVITY$10" id="ACTIVITY$10" ptlinktgt="pt_replace" tabindex="188" href="javascript:submitAction_win0(document.win0,'ACTIVITY$10');" class="PSHYPERLINK">LABWORK-10</a></span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divCATEGORY$10"><span class="PSEDITBOX_DISPONLY" id="CATEGORY$10">LabWork</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_STUDENT_GRADE$10"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_STUDENT_GRADE$10">15.00</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divLAM_CLASS_ACTV_MARK_OUT_OF$10"><span class="PSEDITBOX_DISPONLY" id="LAM_CLASS_ACTV_MARK_OUT_OF$10">15</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_EXPLANATION$10"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_EXPLANATION$10"> </span>
+</div></td>
+</tr>
+<tr id="trSTDNT_GRADE_DTL$0_row12" valign="center" onclick="HighLightTR('rgb(212,219,217)','','trSTDNT_GRADE_DTL$0_row12');" onmouseover="hoverLightTR('rgb(249,254,203)','',0,'trSTDNT_GRADE_DTL$0_row12');" onmouseout="hoverLightTR('rgb(249,254,203)','',1,'trSTDNT_GRADE_DTL$0_row12');">
+<td align="left" height="13" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divDERIVED_LAM_BEGIN_DT$11"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_BEGIN_DT$11">27/05/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divSTDNT_GRADE_DTL_DUE_DT$11"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_DUE_DT$11">29/05/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW" nowrap="nowrap">
+<div id="win0divACTIVITY$11"><span id="ACTIVITY$span$11" class="PSHYPERLINK" title="Student Activities"><a name="ACTIVITY$11" id="ACTIVITY$11" ptlinktgt="pt_replace" tabindex="196" href="javascript:submitAction_win0(document.win0,'ACTIVITY$11');" class="PSHYPERLINK">LABWORK-11</a></span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divCATEGORY$11"><span class="PSEDITBOX_DISPONLY" id="CATEGORY$11">LabWork</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divSTDNT_GRADE_DTL_STUDENT_GRADE$11"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_STUDENT_GRADE$11">15.00</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divLAM_CLASS_ACTV_MARK_OUT_OF$11"><span class="PSEDITBOX_DISPONLY" id="LAM_CLASS_ACTV_MARK_OUT_OF$11">15</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDEVENROW">
+<div id="win0divDERIVED_LAM_EXPLANATION$11"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_EXPLANATION$11"> </span>
+</div></td>
+</tr>
+<tr id="trSTDNT_GRADE_DTL$0_row13" valign="center" onclick="HighLightTR('rgb(212,219,217)','','trSTDNT_GRADE_DTL$0_row13');" onmouseover="hoverLightTR('rgb(249,254,203)','',0,'trSTDNT_GRADE_DTL$0_row13');" onmouseout="hoverLightTR('rgb(249,254,203)','',1,'trSTDNT_GRADE_DTL$0_row13');">
+<td align="left" height="13" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_BEGIN_DT$12"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_BEGIN_DT$12">27/05/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_DUE_DT$12"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_DUE_DT$12">30/05/2018</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW" nowrap="nowrap">
+<div id="win0divACTIVITY$12"><span id="ACTIVITY$span$12" class="PSHYPERLINK" title="Student Activities"><a name="ACTIVITY$12" id="ACTIVITY$12" ptlinktgt="pt_replace" tabindex="204" href="javascript:submitAction_win0(document.win0,'ACTIVITY$12');" class="PSHYPERLINK">LABWORK-12</a></span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divCATEGORY$12"><span class="PSEDITBOX_DISPONLY" id="CATEGORY$12">LabWork</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divSTDNT_GRADE_DTL_STUDENT_GRADE$12"><span class="PSEDITBOX_DISPONLY" id="STDNT_GRADE_DTL_STUDENT_GRADE$12">15.00</span>
+</div></td>
+<td align="right" class="PSLEVEL1GRIDODDROW">
+<div id="win0divLAM_CLASS_ACTV_MARK_OUT_OF$12"><span class="PSEDITBOX_DISPONLY" id="LAM_CLASS_ACTV_MARK_OUT_OF$12">15</span>
+</div></td>
+<td align="left" class="PSLEVEL1GRIDODDROW">
+<div id="win0divDERIVED_LAM_EXPLANATION$12"><span class="PSEDITBOX_DISPONLY" id="DERIVED_LAM_EXPLANATION$12"> </span>
+</div></td>
+</tr>
+</tbody></table></td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="3" colspan="3"></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="10" colspan="9"></td>
+</tr>
+<tr>
+<td height="30" colspan="3"></td>
+<td colspan="3" valign="top" align="left">
+<div id="win0divDERIVED_LAM_CATEGORY_WEIGHT$86$"><table cellpadding="2" cellspacing="0" cols="1" class="SSSGROUPBOXDKBLUEWBO" width="619">
+<tbody><tr><td class="PAGROUPBOXLABELINVISIBLE" align="left">Expand section</td></tr>
+<tr><td width="617">
+<table border="0" id="ACE_DERIVED_LAM_CATEGORY_WEIGHT$86$" cellpadding="0" cellspacing="0" cols="3" width="617" class="SSSGROUPBOXDKBLUE" style="border-style:none">
+<tbody><tr>
+<td width="3" height="0"></td>
+<td width="28"></td>
+<td width="586"></td>
+</tr>
+<tr>
+<td height="1"></td>
+<td rowspan="2" nowrap="nowrap" valign="top" align="left">
+<div id="win0divDERIVED_LAM_CATEGORY_WEIGHT$110$"><a name="DERIVED_LAM_CATEGORY_WEIGHT$110$" id="DERIVED_LAM_CATEGORY_WEIGHT$110$" tabindex="223" href="javascript:submitAction_win0(document.win0,'DERIVED_LAM_CATEGORY_WEIGHT$110$');"><img src="/cs/ps/cache/PS_EXPAND_ICN_1.gif" name="DERIVED_LAM_CATEGORY_WEIGHT$110$$IMG" alt="Expand section" title="Expand section" border="0" /></a>
+</div></td>
+</tr>
+<tr>
+<td height="15"></td>
+<td valign="top" align="left">
+<div id="win0div$ICField$115$"><span class="PALEVEL0SECONDARY">Assignment Categories</span>
+</div></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="8" colspan="9"></td>
+</tr>
+<tr>
+<td height="30" colspan="3"></td>
+<td colspan="3" valign="top" align="left">
+<div id="win0divDERIVED_LAM_CATEGORY_WEIGHT$117$"><table cellpadding="2" cellspacing="0" cols="1" class="SSSGROUPBOXDKBLUEWBO" width="619">
+<tbody><tr><td class="PAGROUPBOXLABELINVISIBLE" align="left">Expand section</td></tr>
+<tr><td width="617">
+<table border="0" id="ACE_DERIVED_LAM_CATEGORY_WEIGHT$117$" cellpadding="0" cellspacing="0" cols="3" width="617" class="SSSGROUPBOXDKBLUE" style="border-style:none">
+<tbody><tr>
+<td width="3" height="0"></td>
+<td width="28"></td>
+<td width="586"></td>
+</tr>
+<tr>
+<td height="1"></td>
+<td rowspan="2" nowrap="nowrap" valign="top" align="left">
+<div id="win0divDERIVED_LAM_LAM_NOTE_PB"><a name="DERIVED_LAM_LAM_NOTE_PB" id="DERIVED_LAM_LAM_NOTE_PB" tabindex="300" href="javascript:submitAction_win0(document.win0,'DERIVED_LAM_LAM_NOTE_PB');"><img src="/cs/ps/cache/PS_EXPAND_ICN_1.gif" name="DERIVED_LAM_LAM_NOTE_PB$IMG" alt="Expand section" title="Expand section" border="0" /></a>
+</div></td>
+</tr>
+<tr>
+<td height="15"></td>
+<td valign="top" align="left">
+<div id="win0div$ICField$119$"><span class="PALEVEL0SECONDARY">Instructor Comments</span>
+</div></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="8" colspan="9"></td>
+</tr>
+<tr>
+<td height="30" colspan="3"></td>
+<td colspan="3" valign="top" align="left">
+<div id="win0divDERIVED_LAM_CATEGORY_WEIGHT$121$"><table cellpadding="2" cellspacing="0" cols="1" class="SSSGROUPBOXDKBLUEWBO" width="619">
+<tbody><tr><td class="PAGROUPBOXLABELINVISIBLE" align="left">Expand section</td></tr>
+<tr><td width="617">
+<table border="0" id="ACE_DERIVED_LAM_CATEGORY_WEIGHT$121$" cellpadding="0" cellspacing="0" cols="3" width="617" class="SSSGROUPBOXDKBLUE" style="border-style:none">
+<tbody><tr>
+<td width="3" height="0"></td>
+<td width="28"></td>
+<td width="586"></td>
+</tr>
+<tr>
+<td height="1"></td>
+<td rowspan="2" nowrap="nowrap" valign="top" align="left">
+<div id="win0divDERIVED_LAM_GRADING_DATES_PB"><a name="DERIVED_LAM_GRADING_DATES_PB" id="DERIVED_LAM_GRADING_DATES_PB" tabindex="330" href="javascript:submitAction_win0(document.win0,'DERIVED_LAM_GRADING_DATES_PB');"><img src="/cs/ps/cache/PS_EXPAND_ICN_1.gif" name="DERIVED_LAM_GRADING_DATES_PB$IMG" alt="Expand section" title="Expand section" border="0" /></a>
+</div></td>
+</tr>
+<tr>
+<td height="15"></td>
+<td valign="top" align="left">
+<div id="win0div$ICField$122$"><span class="PALEVEL0SECONDARY">Student Assignment Dates</span>
+</div></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="8" colspan="9"></td>
+</tr>
+<tr>
+<td height="100" colspan="2"></td>
+<td colspan="5" valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_GROUP_BOX$19$"><table cellpadding="2" cellspacing="0" cols="1" class="PABACKGROUNDINVISIBLEWBO" width="651">
+<tbody><tr><td width="649">
+<table border="0" id="ACE_DERIVED_SSTSNAV_GROUP_BOX$19$" cellpadding="0" cellspacing="0" cols="8" width="649" class="PABACKGROUNDINVISIBLE" style="border-style:none">
+<tbody><tr>
+<td width="5" height="0"></td>
+<td width="2"></td>
+<td width="2"></td>
+<td width="36"></td>
+<td width="136"></td>
+<td width="444"></td>
+<td width="2"></td>
+<td width="22"></td>
+</tr>
+<tr>
+<td height="13"></td>
+<td colspan="5" valign="top" align="left">
+<hr width="100%" align="left" class="PSHORIZONTALRULE" />
+</td>
+</tr>
+<tr>
+<td height="20" colspan="2"></td>
+<td colspan="5" valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_SSS_FOOTER_LINKS"><div style="width:620px; ">
+<!-- Begin HTML Area Name Undisclosed -->
+<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td> </td>
+<td><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?Page=SSR_CLSRCH_ENTRY&amp;Action=U" class="SSSFOOTERLINKBOLD">Search</a></td>
+<td> </td>
+<td> </td><td> </td>
+<td><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSS_MY_PLANNER.GBL?Page=SSS_MY_PLANNER&amp;Action=A" class="SSSFOOTERLINKBOLD">Plan</a></td>
+<td> </td>
+<td> </td><td> </td>
+<td><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SSENRL_CART.GBL?Page=SSR_SSENRL_CART&amp;Action=A" class="SSSFOOTERLINKBOLD">Enroll</a></td>
+<td> </td>
+<td> </td><td> </td>
+<td><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSS_MY_ACAD.GBL?Page=SSS_MY_ACAD&amp;Action=U" class="SSSFOOTERLINKBOLD">My Academics</a></td>
+<td> </td>
+<td> </td></tr></tbody></table>
+<!-- End HTML Area -->
+</div>
+</div></td>
+</tr>
+<tr>
+<td height="19" colspan="2"></td>
+<td colspan="5" valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_SSS_SUBFOOT_LINKS"><div style="width:620px; ">
+<!-- Begin HTML Area Name Undisclosed -->
+<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td> </td>
+<td><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SSENRL_LIST.GBL?Page=SSR_SSENRL_LIST&amp;Action=A" class="SSSFOOTERLINK">My Class Schedule</a></td>
+<td> </td>
+<td> </td><td> </td>
+<td><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SSENRL_CART.GBL?Page=SSR_SSENRL_CART&amp;Action=A" class="SSSFOOTERLINK">Add</a></td>
+<td> </td>
+<td> </td><td> </td>
+<td><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SSENRL_DROP.GBL?Page=SSR_SSENRL_DROP&amp;Action=A" class="SSSFOOTERLINK">Drop</a></td>
+<td> </td>
+<td> </td><td> </td>
+<td><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SSENRL_SWAP.GBL?Page=SSR_SSENRL_SWAP&amp;Action=A" class="SSSFOOTERLINK">Swap</a></td>
+<td> </td>
+<td> </td><td> </td>
+<td><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SSENRL_EDIT.GBL?Page=SSR_SSENRL_EDIT&amp;Action=A" class="SSSFOOTERLINK">Edit</a></td>
+<td> </td>
+<td> </td><td> </td>
+<td><a href="/psc/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSR_SS_TERM_LINKS.GBL?Page=SSR_SS_TERM_LINKS&amp;Action=A" class="SSSFOOTERLINK">Term Information</a></td>
+<td> </td>
+<td> </td></tr></tbody></table>
+<!-- End HTML Area -->
+</div>
+</div></td>
+</tr>
+<tr>
+<td height="8" colspan="3"></td>
+<td valign="top" align="left">
+<div id="win0div$ICField$13$"><table cellpadding="2" cellspacing="0" cols="1" class="PABACKGROUNDINVISIBLEWBO" width="36">
+<tbody><tr><td width="34" height="6">
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="28"></td>
+<td colspan="4" valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_SSTS_MAIN_GOTO$16$"><table cellpadding="2" cellspacing="0" cols="1" class="PABACKGROUNDINVISIBLEWBO" width="175">
+<tbody><tr><td width="173">
+<table border="0" id="ACE_DERIVED_SSTSNAV_SSTS_MAIN_GOTO$16$" cellpadding="0" cellspacing="0" cols="3" width="173" class="PABACKGROUNDINVISIBLE" style="border-style:none">
+<tbody><tr>
+<td width="3" height="0"></td>
+<td width="148"></td>
+<td width="22"></td>
+</tr>
+<tr>
+<td height="1" colspan="2"></td>
+<td rowspan="2" nowrap="nowrap" valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_GO$8$"><a name="DERIVED_SSTSNAV_GO$8$" id="DERIVED_SSTSNAV_GO$8$" tabindex="463" href="javascript:submitAction_win0(document.win0,'DERIVED_SSTSNAV_GO$8$');"><img src="/cs/ps/cache/PT_NAV_GO_2.gif" name="DERIVED_SSTSNAV_GO$8$$IMG" alt="GO!" title="GO!" border="0" /></a>
+</div></td>
+</tr>
+<tr>
+<td height="22"></td>
+<td valign="top" align="left">
+<div id="win0divDERIVED_SSTSNAV_SSTS_MAIN_GOTO$8$"><select name="DERIVED_SSTSNAV_SSTS_MAIN_GOTO$8$" id="DERIVED_SSTSNAV_SSTS_MAIN_GOTO$8$" tabindex="462" size="1" class="PSDROPDOWNLIST" style="width:148px; " onchange="addchg_win0(this);return doEdits_win0(this,'','N','N','N','N','Y','Y',0);" psnchg="0">
+<option value="0300">Account Inquiry</option>
+<option value="0200">My Academics</option>
+<option value="0400">Personal Data Summary</option>
+<option value="0100">Student Center</option>
+<option value="0500">User Preferences</option>
+<option value="9999" selected="selected">go to ...</option>
+</select>
+</div></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="7" colspan="8"></td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</div></td>
+</tr>
+<tr>
+<td height="10" colspan="9"></td>
+</tr>
+</tbody></table>
+</div></td></tr>
+</tbody></table>
+<div id="pt_dragtxt" class="PSLEVEL1GRIDCOLUMNHDR"></div><div onmouseup="ptGridResizeObj_win0.TDselUp();" onmousemove="ptGridResizeObj_win0.TDselMove();" id="pt_dragResize" onmouseout="ptGridResizeObj_win0.dragTD=false;" onmbouseover="ptGridResizeObj_win0.dragTD=true;"></div></div><div id="DetachDiv" height="0" width="0" frameborder="0"></div>
+</form>
+<a name="ICLastAnchor_win0"></a>
+<div id="popupDragFrame" class="popupDragFrame"> </div>
+<!-- Mouse-over popup Begin -->
+<table id="win0MOpopupContainer" width="20" border="0" cellpadding="0" cellspacing="0" style="display:none; position:absolute; top:0; left:0;" onmouseover="MOpopupObj_win0.StartPopup('win0MOpopupContainer', '');" onmouseout="MOpopupObj_win0.StopPopup();"><tbody><tr>
+<td id="win0MOpopupInner" height="25" width="20" align="left" valign="top" class="MOBGImage">
+<div id="win0MOdivpopupFrame" tabindex="-1" onclick="MOpopupObj_win0.SetFocusFlag(false);" style="overflow:auto; width:20px; height: 60px; padding:8px; box-shadow:0 0 5px #000000; background-color:white; border: 1px solid #666666;">test</div></td>
+</tr>
+</tbody></table>
+<!-- Mouse-over popup End  -->
+
+<!-- Embedded Help popup Begin -->
+<div id="HelppopupDiv" style="display:none; position:absolute; top:0; left:0">t</div>
+<div id="HelpDragFrame" class="popupDragFrame"> </div><table id="HelppopupContainer" width="20" border="0" cellpadding="0" cellspacing="0" style="opacity: 1; display: none; position: absolute; top: 0px; left: 0px; visibility: hidden;">
+<tbody><tr>
+<td id="HelppopupInner" align="left" valign="top" style="position:absolute;z-Index:302;">
+<div id="HelppopupTitleBar" class="PTPOPUP_HEADER" style="width:341px"><div id="HelppopupTitleBarLeftImage"></div><div id="HelppopupTitleBarMiddle" style="width:333px" dir="ltr">
+<table>
+<tbody><tr><td id="HelppopupTitle" style="width:290px; cursor: move;"><span class="PTPOPUP_TITLE">Help</span></td>
+<td style="width:45px"><img id="#HELPPOPUPCLOSE" style="cursor:pointer" title="Close" alt="Close" align="right" onclick="HelppopupObj_win0.StopPopup();" src="/cs/ps/cache/PT_PORTAL_IC_CLOSE_2.gif" /></td>
+</tr></tbody></table>
+</div><div id="HelppopupTitleBarRightImage"></div></div><div id="HelpdivpopupFrame" class="MOBGImage" tabindex="-1" onclick="HelppopupObj_win0.SetFocusFlag(false);" style="border: 1px #bcbaba solid; padding:12px; overflow:auto;">test</div><div id="HelppopupShadow" class="popupShadow" style="position:absolute;z-index:-1;"><div id="HelppopupShadowTopRightCorner" class="popupShadowTopRightCorner" style="height:10px;"> </div><div id="HelppopupShadowTop" class="popupShadowTop"> </div><div id="HelppopupShadowBottom" class="popupShadowBottom" style="height:10px"><div id="HelppopupShadowBottomLeftCorner" class="popupShadowBottomLeftCorner" style="height:10px;width:10px"> </div><div id="HelppopupShadowBottomMiddle" class="popupShadowBottomMiddle" style="height:10px;"> </div><div id="HelppopupShadowBottomRightCorner" class="popupShadowBottomRightCorner" style="height:10px;width:10px"> </div></div></div></td>
+</tr>
+</tbody></table>
+<!-- Embedded Help popup End  -->
+<div id="pt_fakeBC" style="display:none"><ul></ul></div><div id="ptus_universalSrch" style="display:none;"><span>Default Local Node:</span><input type="text" readonly="readonly" name="ptus_defaultlocalnode" id="ptus_defaultlocalnode" value="PSFT_HR" /><br /><span>DbName:</span><input type="text" readonly="readonly" name="ptus_dbname" id="ptus_dbname" value="PRCSDB" /><br /><span>Portal:</span><input type="text" readonly="readonly" name="ptus_portal" id="ptus_portal" value="EMPLOYEE" /><br /><span>Node:</span><input type="text" readonly="readonly" name="ptus_node" id="ptus_node" value="HRMS" /><br /><span>WorkCenter Id:</span><input type="text" readonly="readonly" name="ptus_workcenterid" id="ptus_workcenterid" value="" /><br /><span>Url:</span><input type="text" readonly="readonly" name="ptus_componenturl" id="ptus_componenturl" value="https://cms.nust.edu.pk/psp/ps/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.LAM_STDNT_GRADES.GBL" /><br /></div>
+<script language="JavaScript">
+var bCleanHtml = false;
+var bDefer = true;
+document.deferFldArr_win0 = new Array();
+document.hiddenFldArr_win0 =new Array('ICType','ICElementNum','ICStateNum','ICAction','ICXPos','ICYPos','ResponsetoDiffFrame','TargetFrameName','FacetPath','ICFocus','ICSaveWarningFilter','ICChanged','ICResubmit','ICSID','ICActionPrompt','ICTypeAheadID','ICFind','ICAddCount','ICAPPCLSDATA');
+document.chgFldArr_win0 = new Array();
+var bCDATA = false;
+var bLoadCompleted = true;
+</script>
+<div id="pt_console"></div></body></html>
